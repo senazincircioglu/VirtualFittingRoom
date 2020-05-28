@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showClothes">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/clothes"
+         />
+    <GridLayout
+        android:paddingLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="2">
+        <TextView
+            android:text="Product Name:"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/name"/>
+        <TextView
+            android:text="Size"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/size"/>
+        <TextView
+            android:text="Color:"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/color"/>
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <Button
+        android:id="@+id/btn_toModel"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="try on the model"
+        android:textSize="10dp" />
+    <LinearLayout
+        android:paddingTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_backScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan New Code"/>
+        <View
+            android:layout_width="30dp"
+            android:layout_height="0dp" />
+        <Button
+            android:layout_gravity="start"
+            android:id="@+id/btn_backMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

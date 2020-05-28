@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/appbackground"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/btn_mainToProfile"
+            android:text="Profile"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@drawable/background"
+            android:drawableLeft="@drawable/profile"
+            android:padding="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <Button
+            android:id="@+id/btn_mainToStores"
+            android:text="Stores"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@drawable/background"
+            android:drawableLeft="@drawable/stores"
+            android:padding="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <Button
+            android:id="@+id/btn_mainToWardrobe"
+            android:text="Wardrobe"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@drawable/background"
+            android:drawableLeft="@drawable/wardrobe"
+            android:padding="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+
+        <Button
+        android:id="@+id/btn_mainToModel"
+        android:text="Virtual Model"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@drawable/background"
+        android:drawableLeft="@drawable/vm"
+        android:padding="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <Button
+            android:id="@+id/btn_mainToBarcode"
+            android:text="Barkod Reader"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@drawable/background"
+            android:drawableLeft="@drawable/barcode"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HM">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+      <LinearLayout
+        android:background="@drawable/background"
+        android:layout_width="195dp"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:src="@drawable/store1dress"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Polka Dot Mini Dress"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_gravity="center"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="170dp"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color : Powder Pink"
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size : Small"
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/try1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TRY"/>
+    </LinearLayout>
+    <View
+        android:layout_width="10dp"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:background="@drawable/background"
+        android:layout_width="195dp"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:src="@drawable/store1pant"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basic Pants"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_gravity="center"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="170dp"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color :  Grey"
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size : 34"
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/try2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TRY"/>
+    </LinearLayout>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/background"
+            android:layout_width="195dp"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="230dp"
+                android:src="@drawable/store1tshirt"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grande Amour Tshirt"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center"/>
+            <View
+                android:layout_gravity="center"
+                android:layout_width="170dp"
+                android:layout_height="2dp"
+                android:background="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color : Black"
+                android:textSize="15dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size : Medium"
+                android:textSize="15dp"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/try3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TRY"/>
+        </LinearLayout>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:background="@drawable/background"
+            android:layout_width="195dp"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="230dp"
+                android:src="@drawable/stores1jacket"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Denim Jacket"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center"/>
+            <View
+                android:layout_gravity="center"
+                android:layout_width="170dp"
+                android:layout_height="2dp"
+                android:background="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color :  Yellow"
+                android:textSize="15dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size : 38"
+                android:textSize="15dp"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/try4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TRY"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
