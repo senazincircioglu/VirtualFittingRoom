@@ -10,7 +10,6 @@ import android.widget.Button;
 
 public class MainMenu extends AppCompatActivity {
     Button btn_toStores, btn_toWardrop, btn_toProfile, btn_toModel, btn_toBarcode;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

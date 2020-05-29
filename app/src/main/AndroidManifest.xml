@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HM"></activity>
+        <activity android:name=".UpdateProfile"></activity>
+        <activity android:name=".HM" />
         <activity android:name=".showClothes" />
         <activity android:name=".Barcode" />
         <activity android:name=".VirtualModel" />

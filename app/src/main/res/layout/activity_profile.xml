@@ -10,14 +10,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar3"
-            app:title="Profile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme" />
         <TextView
             android:padding="10dp"
             android:layout_width="wrap_content"
@@ -46,7 +38,7 @@
             android:textSize="20dp"/>
            <TextView
                android:padding="10dp"
-               android:id="@+id/txt_user"
+               android:id="@+id/txuser"
                android:text="root"
                android:textSize="20dp"
                android:layout_width="250dp"
@@ -60,11 +52,27 @@
                android:textColor="@android:color/black"
                android:textSize="20dp"/>
            <TextView
-               android:id="@+id/password"
+               android:inputType="textPassword"
+               android:id="@+id/txtPassword"
                android:text="toor"
                android:layout_width="250dp"
                android:layout_height="wrap_content"
                android:textSize="20dp"
+               />
+
+           <TextView
+               android:padding="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="E-Mail:"
+               android:textColor="@android:color/black"
+               android:textSize="20dp"/>
+           <TextView
+               android:text="root@gmail.com"
+               android:textSize="20dp"
+               android:id="@+id/txtEmail"
+               android:layout_width="250dp"
+               android:layout_height="wrap_content"
                />
            <TextView
                android:padding="10dp"
@@ -77,22 +85,8 @@
                android:padding="10dp"
                android:layout_width="250dp"
                android:layout_height="wrap_content"
-               android:id="@+id/txt_age"
+               android:id="@+id/txtAge"
                android:text="22"
-               />
-           <TextView
-               android:padding="10dp"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="E-Mail:"
-               android:textColor="@android:color/black"
-               android:textSize="20dp"/>
-           <TextView
-               android:text="root@gmail.com"
-               android:textSize="20dp"
-               android:id="@+id/txt_email"
-               android:layout_width="250dp"
-               android:layout_height="wrap_content"
                />
            <TextView
                android:padding="10dp"
@@ -101,25 +95,14 @@
                android:text="Gender:"
                android:textColor="@android:color/black"
                android:textSize="20dp"/>
-           <RadioGroup
-               android:layout_width="match_parent"
+           <TextView
+               android:padding="10dp"
+               android:layout_width="250dp"
                android:layout_height="wrap_content"
-               android:orientation="horizontal"
-               android:id="@+id/RGroup_gender">
-               <RadioButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Female"
-                   android:id="@+id/Rbtn_female"/>
-               <View
-                   android:layout_width="50dp"
-                   android:layout_height="0dp"/>
-               <RadioButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Male"
-                   android:id="@+id/Rbtn_male"/>
-           </RadioGroup>
+               android:id="@+id/txtGender"
+               android:text="Female"
+               />
+
 
        </GridLayout>
 
@@ -148,6 +131,7 @@
                 android:textColor="@android:color/black"
                 android:textSize="20dp"/>
             <TextView
+                android:id="@+id/txtUpper"
                 android:padding="10dp"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
@@ -162,6 +146,7 @@
                 android:textColor="@android:color/black"
                 android:textSize="20dp"/>
             <TextView
+                android:id="@+id/txtLower"
                 android:padding="10dp"
                 android:text="34"
                 android:layout_width="250dp"
