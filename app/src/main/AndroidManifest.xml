@@ -20,7 +20,7 @@
         <activity android:name=".showClothes" />
         <activity android:name=".Barcode" />
         <activity android:name=".VirtualModel" />
-        <activity android:name=".Wardrop" />
+
         <activity android:name=".profile" />
         <activity android:name=".Stores" />
         <activity android:name=".MainMenu">
