@@ -8,21 +8,43 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:background="@drawable/activitiesbackground">
+        <LinearLayout
+            android:background="@android:color/holo_purple"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/btn_backProfile"
+                android:drawableLeft="@drawable/backarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal"/>
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"/>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"/>
+        </LinearLayout>
         <TextView
             android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Personal Information:"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="#4A00E0"
             android:textSize="30dp"/>
 
 
         <View
             android:layout_width="match_parent"
             android:layout_height="4dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="#4A00E0"
             />
        <GridLayout
            android:layout_width="wrap_content"
@@ -31,6 +53,7 @@
            android:columnCount="2">
         <TextView
             android:padding="10dp"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="User Name: "
@@ -40,12 +63,14 @@
                android:padding="10dp"
                android:id="@+id/txuser"
                android:text="root"
+               android:textStyle="bold"
                android:textSize="20dp"
                android:layout_width="250dp"
                android:layout_height="wrap_content"
                />
            <TextView
                android:padding="10dp"
+               android:textStyle="bold"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="Password:"
@@ -53,6 +78,7 @@
                android:textSize="20dp"/>
            <TextView
                android:inputType="textPassword"
+               android:textStyle="bold"
                android:id="@+id/txtPassword"
                android:text="toor"
                android:layout_width="250dp"
@@ -62,12 +88,14 @@
 
            <TextView
                android:padding="10dp"
+               android:textStyle="bold"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="E-Mail:"
                android:textColor="@android:color/black"
                android:textSize="20dp"/>
            <TextView
+               android:textStyle="bold"
                android:text="root@gmail.com"
                android:textSize="20dp"
                android:id="@+id/txtEmail"
@@ -75,6 +103,7 @@
                android:layout_height="wrap_content"
                />
            <TextView
+               android:textStyle="bold"
                android:padding="10dp"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
@@ -82,6 +111,7 @@
                android:textColor="@android:color/black"
                android:textSize="20dp"/>
            <TextView
+               android:textStyle="bold"
                android:padding="10dp"
                android:layout_width="250dp"
                android:layout_height="wrap_content"
@@ -89,6 +119,7 @@
                android:text="22"
                />
            <TextView
+               android:textStyle="bold"
                android:padding="10dp"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
@@ -97,6 +128,7 @@
                android:textSize="20dp"/>
            <TextView
                android:padding="10dp"
+               android:textStyle="bold"
                android:layout_width="250dp"
                android:layout_height="wrap_content"
                android:id="@+id/txtGender"
@@ -111,12 +143,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Body Sizes:"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="#4A00E0"
             android:textSize="30dp"/>
          <View
              android:layout_width="match_parent"
              android:layout_height="4dp"
-             android:background="@color/colorPrimaryDark"
+             android:background="#4A00E0"
              />
         <GridLayout
             android:layout_width="wrap_content"
@@ -124,6 +156,7 @@
             android:rowCount="6"
             android:columnCount="2">
             <TextView
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Upper Body:"
@@ -131,6 +164,7 @@
                 android:textColor="@android:color/black"
                 android:textSize="20dp"/>
             <TextView
+                android:textStyle="bold"
                 android:id="@+id/txtUpper"
                 android:padding="10dp"
                 android:layout_width="250dp"
@@ -139,6 +173,7 @@
                 android:text="Small"
                 />
             <TextView
+                android:textStyle="bold"
                 android:padding="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -146,6 +181,7 @@
                 android:textColor="@android:color/black"
                 android:textSize="20dp"/>
             <TextView
+                android:textStyle="bold"
                 android:id="@+id/txtLower"
                 android:padding="10dp"
                 android:text="34"
@@ -153,27 +189,19 @@
                 android:layout_height="50dp"
                 />
         </GridLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
-        <Button
-            android:id="@+id/btn_backProfile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Back"
-            android:layout_gravity="center_horizontal"/>
-            <View
-                android:layout_width="30dp"
-                android:layout_height="0dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="100dp"/>
+
         <Button
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:text="Edit"
+            android:textColor="#4A00E0"
+            android:textSize="20dp"
+            android:background="@drawable/allbutton"
             android:layout_gravity="center"
             android:id="@+id/editProfile"/>
-        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

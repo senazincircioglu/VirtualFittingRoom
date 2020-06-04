@@ -5,6 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HM">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/activitiesbackground">
+
+     <LinearLayout
+         android:background="@android:color/holo_purple"
+         android:layout_width="match_parent"
+         android:layout_height="50dp">
+         <Button
+             android:drawableLeft="@drawable/backarrow"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@android:color/transparent"/>
+         <View
+             android:layout_width="80dp"
+             android:layout_height="0dp"/>
+         <TextView
+             android:padding="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/HM"
+             android:textColor="@android:color/black"
+             android:textSize="25dp"/>
+     </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,15 +45,16 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
       <LinearLayout
-        android:background="@drawable/background"
+        android:background="@drawable/button1"
         android:layout_width="195dp"
-        android:layout_height="350dp"
-        android:orientation="vertical">
+        android:layout_height="340dp"
+        android:orientation="vertical"
+          android:paddingTop="15dp">
 
         <ImageView
             android:layout_gravity="center"
             android:layout_width="150dp"
-            android:layout_height="230dp"
+            android:layout_height="200dp"
             android:src="@drawable/store1dress"/>
         <TextView
             android:layout_width="wrap_content"
@@ -60,16 +91,19 @@
         android:layout_width="10dp"
         android:layout_height="0dp"/>
     <LinearLayout
-        android:background="@drawable/background"
+        android:background="@drawable/button1"
         android:layout_width="195dp"
-        android:layout_height="350dp"
-        android:orientation="vertical">
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        >
 
         <ImageView
             android:layout_gravity="center"
             android:layout_width="150dp"
-            android:layout_height="230dp"
-            android:src="@drawable/store1pant"/>
+            android:layout_height="200dp"
+            android:src="@drawable/store1pant"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -110,15 +144,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <LinearLayout
-            android:background="@drawable/background"
+            android:background="@drawable/button1"
             android:layout_width="195dp"
-            android:layout_height="350dp"
-            android:orientation="vertical">
+            android:layout_height="340dp"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
 
             <ImageView
                 android:layout_gravity="center"
                 android:layout_width="150dp"
-                android:layout_height="230dp"
+                android:layout_height="200dp"
                 android:src="@drawable/store1tshirt"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -155,15 +190,16 @@
             android:layout_width="10dp"
             android:layout_height="0dp"/>
         <LinearLayout
-            android:background="@drawable/background"
+            android:background="@drawable/button1"
             android:layout_width="195dp"
-            android:layout_height="350dp"
-            android:orientation="vertical">
+            android:layout_height="340dp"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
 
             <ImageView
                 android:layout_gravity="center"
                 android:layout_width="150dp"
-                android:layout_height="230dp"
+                android:layout_height="200dp"
                 android:src="@drawable/stores1jacket"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -200,5 +236,8 @@
 
 
 </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

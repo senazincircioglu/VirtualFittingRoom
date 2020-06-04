@@ -5,36 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VirtualModel">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/activitiesbackground">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+       >
+        <LinearLayout
+            android:background="@android:color/holo_purple"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/btn_backVM"
+                android:drawableLeft="@drawable/backarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+            <View
+                android:layout_width="40dp"
+                android:layout_height="0dp"/>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Virtual Model"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"/>
+        </LinearLayout>
+<View
+    android:layout_width="0dp"
+    android:layout_height="80dp"/>
         <ImageView
             android:id="@+id/img_model"
             android:layout_width="300dp"
             android:layout_height="400dp"
-            android:src="@drawable/model_carla" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-        <Button
-            android:id="@+id/btn_backVM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Back"/>
-            <View
-                android:layout_width="30dp"
-                android:layout_height="0dp"/>
+            android:src="@drawable/model_carla"
+            android:layout_gravity="center"/>
         <Button
             android:id="@+id/btn_updateModel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Update Model"/>
-        </LinearLayout>
-    </LinearLayout>
+            android:text="Update Model"
+            android:layout_gravity="center"/>
 
+    </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@ import android.widget.Spinner;
 
 public class UpdateProfile extends AppCompatActivity {
     //Buttons
-    Button btnSave, btnCancel;
+    Button btnSave, btnCancel, btn_back;
     EditText userName, password, age, email;
     RadioGroup gender;
    //Spinner(Combobox) String
@@ -52,6 +52,7 @@ public class UpdateProfile extends AppCompatActivity {
         //identifying buttons
         btnSave =(Button)findViewById(R.id.btn_Save);
         btnCancel =(Button)findViewById(R.id.btn_Cancel);
+        btn_back =(Button)findViewById(R.id.btn_back);
 
  // get user name , password, email and gender info
        sendUser = userName.getText().toString();
@@ -65,7 +66,13 @@ public class UpdateProfile extends AppCompatActivity {
         btnSave_Click();
         btnCancel_Click();
 
-
+btn_back.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent i = new Intent(getApplicationContext(),profile.class);
+        startActivity(i);
+    }
+});
     }
 
     public void btnSave_Click(){

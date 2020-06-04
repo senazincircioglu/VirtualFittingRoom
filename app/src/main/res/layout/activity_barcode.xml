@@ -8,7 +8,42 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/mainmenubackground">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/warningbackground"
+            android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text = "No Found Barcode Result"
+            android:textColor="@android:color/black"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="30dp"/>
+    <Button
+    android:id="@+id/btn_barcodeBack"
+    android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:text="BACK TO MAIN MENU"
+    android:background="@drawable/button1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"/>
+        <Button
+            android:background="@drawable/button1"
+            android:id="@+id/btn_barcodeTryagain"
+          android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="TRY AGAIN"/>
+        </LinearLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

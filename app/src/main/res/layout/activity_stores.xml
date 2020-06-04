@@ -9,102 +9,183 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/activitiesbackground"
         android:orientation="vertical">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:title="Stores" />
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="3"
-            android:paddingLeft="20dp">
-
-            <Button
-                android:id="@+id/btn_store1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/hm"
-
-                />
-
-            <Button
-                android:id="@+id/btn_store2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/oxxo" />
-
-            <Button
-                android:id="@+id/btn_store3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/bershka" />
-
-            <Button
-                android:id="@+id/btn_store4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/mango" />
-
-            <Button
-                android:id="@+id/btn_store5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/zara" />
-
-            <Button
-                android:id="@+id/btn_store6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/pullbear" />
-
-            <Button
-                android:id="@+id/btn_store7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/lc" />
-
-            <Button
-                android:id="@+id/btn_store8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/uspolo" />
-
-            <Button
-                android:id="@+id/btn_store9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/koton" />
-        </GridLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="240dp" />
-
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_purple">
 
             <Button
                 android:id="@+id/btn_backStores"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Back" />
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/backarrow" />
 
-            <Button
-                android:id="@+id/btn_editStores"
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edit" />
+                android:padding="5dp"
+                android:text="Stores"
+                android:textColor="@android:color/black"
+                android:textSize="25dp" />
         </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/btn_store1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button1"
+                android:drawableLeft="@drawable/hm"
+                android:padding="5dp"
+
+                />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:id="@+id/btn_store2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button1"
+                android:drawableLeft="@drawable/oxxo"
+                android:padding="5dp" />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp"/>
+            <Button
+                android:id="@+id/btn_store3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button1"
+                android:drawableLeft="@drawable/bershka"
+                android:padding="5dp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btn_store4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:drawableLeft="@drawable/mango"
+            android:padding="5dp" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:id="@+id/btn_store5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:drawableLeft="@drawable/zara"
+            android:padding="5dp" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+        <Button
+            android:id="@+id/btn_store6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:drawableLeft="@drawable/pullbear"
+            android:padding="5dp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btn_store7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:drawableLeft="@drawable/lc"
+            android:padding="5dp" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+        <Button
+            android:id="@+id/btn_store8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:drawableLeft="@drawable/uspolo"
+            android:padding="5dp" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+        <Button
+            android:id="@+id/btn_store9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:drawableLeft="@drawable/koton"
+            android:padding="5dp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/btn_store10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button1"
+                android:drawableLeft="@drawable/ltb"
+                android:padding="5dp" />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp"/>
+            <Button
+                android:id="@+id/btn_store11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button1"
+                android:drawableLeft="@drawable/loft"
+                android:padding="5dp" />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp"/>
+            <Button
+                android:id="@+id/btn_store12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button1"
+                android:drawableLeft="@drawable/mavi"
+                android:padding="5dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:id="@+id/btn_editStores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/allbutton"
+            android:text="Edit"
+            android:textColor="@color/buttontext" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

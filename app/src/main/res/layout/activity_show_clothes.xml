@@ -9,12 +9,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="20dp">
+    android:background="@drawable/activitiesbackground">
+    <LinearLayout
+        android:background="@android:color/holo_purple"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/btn_backMain"
+            android:drawableLeft="@drawable/backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+        <View
+            android:layout_width="40dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Clothes"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"/>
+    </LinearLayout>
     <ImageView
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="400dp"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/clothes"
         android:id="@+id/clothes"
          />
     <GridLayout
@@ -54,31 +75,25 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/allbutton"
+        android:textColor="@color/buttontext"
         android:text="try on the model"
-        android:textSize="10dp" />
-    <LinearLayout
-        android:paddingTop="80dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:textSize="15dp" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
 
         <Button
             android:id="@+id/btn_backScanner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Scan New Code"/>
-        <View
-            android:layout_width="30dp"
-            android:layout_height="0dp" />
-        <Button
-            android:layout_gravity="start"
-            android:id="@+id/btn_backMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Exit" />
+            android:background="@drawable/allbutton"
+            android:textColor="@color/buttontext"
+            android:text="Scan New Code"
+            android:layout_gravity="center"/>
 
-    </LinearLayout>
+
+
 
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

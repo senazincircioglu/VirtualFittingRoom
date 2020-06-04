@@ -9,18 +9,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/appbackground"
+        android:background="@drawable/mainmenubackground"
         android:orientation="vertical"
-        android:padding="5dp">
+        android:padding="15dp">
         <Button
             android:id="@+id/btn_mainToProfile"
             android:text="Profile"
             android:textSize="20dp"
             android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:background="@drawable/background"
+            android:layout_height="138dp"
+            android:background="@drawable/button1"
             android:drawableLeft="@drawable/profile"
-            android:padding="10dp"
+            android:padding="30dp"
             />
         <View
             android:layout_width="match_parent"
@@ -30,22 +30,22 @@
             android:text="Stores"
             android:textSize="20dp"
             android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:background="@drawable/background"
+            android:layout_height="138dp"
+            android:background="@drawable/button1"
             android:drawableLeft="@drawable/stores"
-            android:padding="10dp" />
+            android:padding="30dp" />
         <View
             android:layout_width="match_parent"
             android:layout_height="10dp"/>
         <Button
-            android:id="@+id/btn_mainToWardrobe"
+            android:id="@+id/btn_ToWardrobe"
             android:text="Wardrobe"
             android:textSize="20dp"
             android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:background="@drawable/background"
+            android:layout_height="138dp"
+            android:background="@drawable/button1"
             android:drawableLeft="@drawable/wardrobe"
-            android:padding="10dp" />
+            android:padding="30dp" />
         <View
             android:layout_width="match_parent"
             android:layout_height="10dp"/>
@@ -56,22 +56,22 @@
         android:text="Virtual Model"
         android:textSize="20dp"
         android:layout_width="match_parent"
-        android:layout_height="135dp"
-        android:background="@drawable/background"
+        android:layout_height="138dp"
+        android:background="@drawable/button1"
         android:drawableLeft="@drawable/vm"
-        android:padding="10dp" />
+        android:padding="30dp" />
         <View
             android:layout_width="match_parent"
             android:layout_height="10dp"/>
         <Button
             android:id="@+id/btn_mainToBarcode"
-            android:text="Barkod Reader"
+            android:text="Barcode Reader"
             android:textSize="20dp"
             android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:background="@drawable/background"
+            android:layout_height="138dp"
+            android:background="@drawable/button1"
             android:drawableLeft="@drawable/barcode"
-            android:padding="10dp" />
+            android:padding="30dp" />
 
     </LinearLayout>
 
